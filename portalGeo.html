@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal SIMGEO - Campo Grande/MS</title>
+  <!-- Framework tailwindcss-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script> 
+  <style>
+    body::before {
+    content: "";
+    background: url('foto_aerea_cg.jpeg') no-repeat center center / cover;
+    position: fixed;
+    inset: 0;
+    opacity: 1; /* mais sutil */
+    z-index: -1;
+  }
+</style>
+</head>
+<body class="h-full flex flex-col bg-white text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-blue-800 text-white py-6 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+    
+    <!-- Título -->
+    <div class="text-center md:text-left">
+      <h1 class="text-3xl font-bold text-white flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 1010 10A10 10 0 0012 2z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2 12h20M12 2a15 15 0 010 20" />
+        </svg>
+        PORTAL GEO_CG
+      </h1>
+      <p class="mt-1 text-sm">Cidade de Campo Grande - MS</p>
+    </div>
+
+    <!-- Botão de login -->
+    <a href="https://simgeoctm.campogrande.ms.gov.br/portal/home/" class="flex items-center gap-2 px-4 py-2 border border-white rounded-full text-white hover:bg-white hover:text-blue-800 transition">
+      <span data-feather="user"></span>
+      <span class="hidden sm:inline">Portal</span>
+    </a>
+  </div>
+</header>
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-blue-800">Portal de Geoprocessamento de Campo Grande - MS</div>
+      <div class="space-x-4 text-sm font-medium">
+        <a href="/" class="text-gray-700 hover:text-cyan-300">Início</a>
+        <a href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/storymaps/stories/4f4f84de72bf45df8796e7412e04818b" class="text-gray-700 hover:text-cyan-300">Manual do Usuário</a>
+        <a href="https://survey123.arcgis.com/share/33da40089f874f57a6efc19a0d1177f4?portalUrl=https://simgeoctm.campogrande.ms.gov.br/portal" class="text-gray-700 hover:text-cyan-300">Formulário de Satisfação</a>
+        <a href="/saiba_mais.html" class="inline-block bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold px-5 py-2 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300">
+          SAIBA MAIS
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="flex-grow">
+    <section class="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-10">
+
+      <!-- Coluna Esquerda -->
+     <div class="md:w-1/2 relative bg-cover bg-center" style="background-image: url('foto_area_cg.JPEG');">
+  <!-- Overlay escuro -->
+  <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
+
+  <!-- Conteúdo acima do overlay -->
+  <div class="relative z-10 p-6">
+    <h2 class="text-2xl font-semibold mb-4 text-white text-center md:text-left">
+      Acesse o Portal das Secretarias
+    </h2>
+    <p class="text-gray-200 mb-8 text-center md:text-left">
+      Clique sobre a secretaria para acessar seu portal.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Secretarias -->
+<a href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/webappviewer/index.html?id=5ac1a9f5a3f24ae0916da0e2830066a7#" target="_blank" class="group flex flex-col items-center">
+  <div class="w-32 h-32 rounded-full bg-blue-700 text-white flex items-center justify-center text-base font-semibold shadow-md group-hover:scale-105 transition">SEFAZ</div>
+  <span class="mt-2 text-sm text-center text-white group-hover:text-cyan-300">Secretaria da Fazenda</span>
+</a>
+
+<a href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/webappviewer/index.html?id=5195e0905ae44547bac21975f410d2b2" target="_blank" class="group flex flex-col items-center">
+  <div class="w-32 h-32 rounded-full bg-blue-700 text-white flex items-center justify-center text-base font-semibold shadow-md group-hover:scale-105 transition">AMHASF</div>
+  <span class="mt-2 text-sm text-center text-white group-hover:text-cyan-300">Habitação e Fundiário</span>
+</a>
+
+<a href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/webappviewer/index.html?id=6e5bac7b14c141ee9c9590d30efaf44d" target="_blank" class="group flex flex-col items-center">
+  <div class="w-32 h-32 rounded-full bg-blue-700 text-white flex items-center justify-center text-base font-semibold shadow-md group-hover:scale-105 transition">AGETEC</div>
+  <span class="mt-2 text-sm text-center text-white group-hover:text-cyan-300">Tecnologia e Inovação</span>
+</a>
+
+<a href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/webappviewer/index.html?id=3ba08a65e70c4facb609db84b1f2f1ef" target="_blank" class="group flex flex-col items-center">
+  <div class="w-32 h-32 rounded-full bg-blue-700 text-white flex items-center justify-center text-base font-semibold shadow-md group-hover:scale-105 transition">AGETRAN</div>
+  <span class="mt-2 text-sm text-center text-white group-hover:text-cyan-300">Agência de Transporte</span>
+</a>
+
+<a href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/webappviewer/index.html?id=34811f60161b45eea74dca7215dc048f" target="_blank" class="group flex flex-col items-center">
+  <div class="w-32 h-32 rounded-full bg-blue-700 text-white flex items-center justify-center text-base font-semibold shadow-md group-hover:scale-105 transition">PLANURB</div>
+  <span class="mt-2 text-sm text-center text-white group-hover:text-cyan-300">Planejamento Urbano</span>
+</a>
+
+<a href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/webappviewer/index.html?id=6c90b4d6786745869ff17b49e20ca2ee" target="_blank" class="group flex flex-col items-center">
+  <div class="w-32 h-32 rounded-full bg-blue-700 text-white flex items-center justify-center text-base font-semibold shadow-md group-hover:scale-105 transition">SISEP</div>
+  <span class="mt-2 text-sm text-center text-white group-hover:text-cyan-300">Serviços Públicos</span>
+</a>
+
+<a href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/webappviewer/index.html?id=d791b6f2d90745bf96222f865feb188c" target="_blank" class="group flex flex-col items-center">
+  <div class="w-32 h-32 rounded-full bg-blue-700 text-white flex items-center justify-center text-base font-semibold shadow-md group-hover:scale-105 transition">SEMED</div>
+  <span class="mt-2 text-sm text-center text-white group-hover:text-cyan-300">Educação</span>
+</a>
+
+<a href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/webappviewer/index.html?id=946f9aa651594febb611d6ef985ddf3a" target="_blank" class="group flex flex-col items-center">
+  <div class="w-32 h-32 rounded-full bg-blue-700 text-white flex items-center justify-center text-base font-semibold shadow-md group-hover:scale-105 transition">SEMADES</div>
+  <span class="mt-2 text-sm text-center text-white group-hover:text-cyan-300">Urbanismo e Meio Ambiente</span>
+</a>
+
+<a href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/webappviewer/index.html?id=7baeb9cfa2774462b9b49ec3f3c63577" target="_blank" class="group flex flex-col items-center">
+  <div class="w-32 h-32 rounded-full bg-blue-700 text-white flex items-center justify-center text-base font-semibold shadow-md group-hover:scale-105 transition">SESAU</div>
+  <span class="mt-2 text-sm text-center text-white group-hover:text-cyan-300">Saúde</span>
+</a>
+    </div>
+  </div>
+</div>
+          
+          
+        </div>
+      </div>
+
+      <!-- Coluna Direita -->
+      <div class="md:w-1/2 flex items-center justify-center">
+        <a href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/webappviewer/index.html?id=cc13c124c8414dc7b61d016be3629366" target="_blank" class="w-72 h-72 bg-white text-blue-800 border border-blue-800 rounded-full flex flex-col items-center justify-center text-center shadow-lg hover:scale-125 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 14c2.21 0 4 1.79 4 4v2H4v-2c0-2.21 1.79-4 4-4h8zM12 12a4 4 0 100-8 4 4 0 000 8z" />
+          </svg>
+          <h3 class="text-2xl font-bold mb-1">CIDADÃO</h3>
+          <p class="text-sm max-w-xs px-4">Acesso à aplicação pública do SIMGEO com mapas, dados abertos e informações geoespaciais para toda a população.</p>
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+<footer class="bg-blue-800 text-white border-t border-blue-900">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-start md:items-center text-sm">
+    <div>
+      <h2 class="text-xl font-bold">GEO_CG</h2>
+      <p>Secretária da Fazenda - SEFAZ</p>
+    </div>
+    <div class="mt-4 md:mt-0">
+      <p>📍 R. Marechal Rondon, 2655 – Centro</p>
+      <p>📞 (67) 4042-1323 – Ramal: 2763</p>
+    </div>
+    <div class="mt-4 md:mt-0 text-center md:text-right">
+      <p>&copy; 2025. Todos os direitos reservados.</p>
+      <p>Desenvolvido pela equipe do SIMGEO.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+<script>
+  feather.replace()
+</script>
+
+</html>

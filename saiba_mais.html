@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Divisão de Geoprocessamento - Campo Grande</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-p0gxW1fIH+pbqaT6bz8q61hFoVwwM6fz0u+/z9y+HZ6THyfk4XrcZjs9hS9Lp+91Q9ffHSJU+clm0Bz5vC6xPw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Cabeçalho -->
+  <header class="bg-blue-900 text-white py-6 shadow-md">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-3xl font-bold">Divisão de Geoprocessamento</h1>
+      <p class="text-sm mt-1">
+        Gerência de Cartografia - Secretaria Municipal da Fazenda | Campo Grande - MS
+      </p>
+    </div>
+  </header>
+
+  <!-- Imagem de capa com título sobreposto -->
+  <section class="relative">
+    <img
+      src="foto_aerea_cg.jpeg"
+      alt="Foto aérea de Campo Grande"
+      class="w-full h-64 object-cover shadow-lg"
+      loading="lazy"
+    />
+    <div
+      class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center"
+      aria-hidden="true"
+    >
+      <h2 class="text-white text-3xl font-bold drop-shadow-lg">Geoprocessamento em Ação</h2>
+    </div>
+  </section>
+
+  <!-- Conteúdo principal -->
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-12 flex-grow">
+
+    <!-- Nossa Função -->
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-xl font-bold text-blue-800 mb-4">Nossa Função</h2>
+      <p class="text-gray-700 leading-relaxed">
+        A Divisão de Geoprocessamento, sob os cuidados da
+        <strong>Gerência de Cartografia</strong> da Secretaria Municipal da Fazenda de Campo Grande - MS, é responsável pela atualização e manutenção da plataforma de pesquisa geográfica. Essa plataforma é amplamente utilizada por servidores públicos e pela população, reunindo dados de diversas secretarias municipais para consulta pública.
+      </p>
+    </section>
+
+    <!-- Cards informativos -->
+    <section class="grid md:grid-cols-3 gap-6">
+      <div class="bg-blue-100 border border-blue-300 p-5 rounded-xl shadow hover:shadow-lg transition">
+        <div class="flex items-center space-x-3 mb-4">
+          <i class="fa-brands fa-python text-3xl text-yellow-500"></i>
+          <h3 class="text-lg font-bold text-blue-900">Programação em Python</h3>
+        </div>
+        <p>
+          Utilizamos scripts em Python para automações, tratamento de dados espaciais e integração com APIs e bancos de dados geográficos.
+        </p>
+      </div>
+
+      <div class="bg-green-100 border border-green-300 p-5 rounded-xl shadow hover:shadow-lg transition">
+        <div class="flex items-center space-x-3 mb-4">
+          <i class="fa-solid fa-database text-3xl text-green-700"></i>
+          <h3 class="text-lg font-bold text-green-900">Banco de Dados</h3>
+        </div>
+        <p>
+          Gerenciamos bases de dados georreferenciadas com PostgreSQL/PostGIS, garantindo integridade e disponibilidade dos dados.
+        </p>
+      </div>
+
+      <div class="bg-yellow-100 border border-yellow-300 p-5 rounded-xl shadow hover:shadow-lg transition">
+        <div class="flex items-center space-x-3 mb-4">
+          <i class="fa-solid fa-map-location-dot text-3xl text-yellow-700"></i>
+          <h3 class="text-lg font-bold text-yellow-900">Sistemas de Mapas</h3>
+        </div>
+        <p>
+          Utilizamos ferramentas como <strong>QGIS</strong> e <strong>ArcGIS</strong> para análise espacial e produção de mapas temáticos.
+        </p>
+      </div>
+    </section>
+
+    <!-- Cards adicionais -->
+    <section class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-blue-700">
+        <h3 class="text-xl font-semibold text-blue-800 mb-2">🔍 Acesso à Informação</h3>
+        <p>Consulta pública de dados geográficos municipais.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-green-600">
+        <h3 class="text-xl font-semibold text-green-800 mb-2">📈 Atualização Contínua</h3>
+        <p>A Divisão de Geoprocessamento mantém os dados sempre atualizados.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg p-6 border-t-4 border-yellow-500">
+        <h3 class="text-xl font-semibold text-yellow-700 mb-2">🤝 Integração de Secretarias</h3>
+        <p>Diversas secretarias municipais fornecem dados para o sistema.</p>
+      </div>
+    </section>
+
+    <!-- Atualizações e responsável -->
+    <section class="bg-white rounded-xl shadow-md p-6">
+      <h2 class="text-xl font-bold text-blue-800 mb-4">Atualizações Diárias e Colaboração</h2>
+      
+      <p class="text-gray-700 leading-relaxed">
+        A equipe realiza atualizações diárias com dados gerados por várias secretarias do município. A colaboração entre setores é essencial para manter a base georreferenciada atualizada e acessível.
+      </p>
+
+      <p class="text-gray-700 mt-3">
+        A equipe técnica é formada por servidores especializados que realizam as mais diversas atividades de geoprocessamento. A Divisão de Geoprocessamento da Secretaria Municipal da Fazenda é composta pelos seguintes servidores:
+      </p>
+
+      <ul class="list-disc list-inside text-gray-700 mt-3 space-y-1">
+        <li><strong>Ana Laura</strong>, especialista em ferramentas GIS;</li>
+        <li><strong>André L. Porto</strong>, responsável pelo setor e também desenvolvedor de software;</li>
+        <li><strong>Brunno Benites</strong>, desenvolvedor de software;</li>
+        <li><strong>Célia Ruth</strong>, responsável pela atualização e inserção de arquivos georreferenciados;</li>
+        <li><strong>Gabriel Pacheco</strong>, especialista em ferramentas GIS;</li>
+        <li><strong>Renato Cabete</strong>, responsável pela atualização e inserção de dados.</li>
+      </ul>
+
+      <p class="text-gray-700 mt-3">
+        Atualmente, o chefe da Divisão de Geoprocessamento é o servidor <strong>André L. Porto</strong>, responsável pelo desenvolvimento de novas ferramentas e pela manutenção do sistema.
+      </p>
+</section>
+
+
+    <!-- Sobre Campo Grande -->
+    <section class="bg-gray-50 border border-gray-300 rounded-xl p-6 shadow">
+      <h2 class="text-xl font-bold text-blue-800 mb-4">Sobre Campo Grande - MS</h2>
+      <p class="text-gray-700">
+        Localizada na região Centro-Oeste do Brasil, Campo Grande é uma das capitais com maior planejamento urbano do país. O uso de geotecnologias é fundamental para apoiar decisões técnicas, desenvolvimento urbano, mobilidade e sustentabilidade ambiental.
+      </p>
+    </section>
+
+    <!-- Imagem extra -->
+    <section class="flex justify-center mb-10">
+      <img
+        src="foto_aerea_cg.jpeg"
+        alt="Foto aérea de Campo Grande - MS"
+        class="rounded-xl shadow-lg w-full max-w-4xl border border-gray-300"
+        loading="lazy"
+      />
+    </section>
+
+    <!-- Localização e contato -->
+    <section
+      id="contato"
+      class="bg-gray-100 rounded-2xl shadow-md p-6 mt-16 max-w-3xl mx-auto text-center"
+    >
+      <h2 class="text-2xl font-semibold text-blue-800 mb-4">📍 Localização e Contato</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Divisão de Geoprocessamento – Gerência de Cartografia<br />
+        Secretaria Municipal da Fazenda – Prefeitura Municipal de Campo Grande - MS<br />
+        <strong>Endereço:</strong> Rua Marechal Rondon , 2655 – Centro, Campo Grande - MS.<br />
+        <strong>Telefone:</strong> (67) 4042-1323 • <strong>Ramal:</strong> 2763<br />
+        <strong>Responsável:</strong> André L. Porto – Auditor Fiscal de Meio Ambiente
+      </p>
+      <a
+        href="https://simgeoctm.campogrande.ms.gov.br/portal/apps/webappviewer/index.html?id=cc13c124c8414dc7b61d016be3629366"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block mt-4 text-blue-600 hover:underline font-semibold"
+      >
+        📌 Ver no mapa
+      </a>
+    </section>
+
+    <!-- Botão voltar ao site principal -->
+    <section class="mt-12 text-center">
+      <a
+        href="/portalGeo.html"
+        class="inline-block bg-blue-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-800 shadow-md transition"
+        aria-label="Voltar ao site principal"
+      >
+        ← Voltar ao Site Principal
+      </a>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-blue-900 text-white text-center py-4 mt-auto">
+    <p>&copy; 2025 Prefeitura Municipal de Campo Grande - MS | Divisão de Geoprocessamento</p>
+  </footer>
+</body>
+</html>
